@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>items</key>
+	<array>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>label</key>
+			<string>Parallel Settings</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<true/>
+			<key>defaults</key>
+			<string>com.twizzyindy.parallel.settings</string>
+			<key>key</key>
+			<string>isEnabled</string>
+			<key>label</key>
+			<string>Enabled</string>
+			<key>PostNotification</key>
+			<string>com.twizzyindy.parallel.settingsChanged</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>label</key>
+			<string>Install Fonts</string>
+			<key>isStaticText</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSButtonCell</string>
+			<key>label</key>
+			<string>Zawgyi-One</string>
+			<key>action</key>
+			<string>installZawgyiOne:</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSButtonCell</string>
+			<key>label</key>
+			<string>Myanmar3-Regular</string>
+			<key>action</key>
+			<string>installMM3:</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>label</key>
+			<string>Font Size</string>
+			<key>isStaticText</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSSliderCell</string>
+			<key>default</key>
+			<string>14.0</string>
+			<key>defaults</key>
+			<string>com.twizzyindy.parallel.settings</string>
+			<key>key</key>
+			<string>sliderFontSize</string>
+			<key>label</key>
+			<string>Font Size</string>
+			<key>max</key>
+			<string>30.0</string>
+			<key>min</key>
+			<string>8.0</string>
+			<key>showValue</key>
+			<true/>
+			<key>PostNotification</key>
+			<string>com.twizzyindy.parallel.settingsChanged</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>label</key>
+			<string>Enabled Applications</string>
+		</dict>
+		<dict>
+			<key>bundle</key>
+			<string>AppList</string>
+			<key>isController</key>
+			<string>1</string>
+			<key>cell</key>
+			<string>PSLinkCell</string>
+			<key>label</key>
+			<string>Enabled Applications</string>
+			<key>ALSettingsPath</key>
+			<string>/var/mobile/Library/Preferences/com.twizzyindy.parallel.settings.plist</string>
+			<key>ALSettingsKeyPrefix</key>
+			<string>ParallelEnabled-</string>
+			<key>ALSettingsDefaultValue</key>
+			<string></string>
+			<key>ALAllowsSelection</key>
+			<string>1</string>
+			<key>ALSectionDescriptors</key>
+			<array>
+				<dict>
+					<key>items</key>
+					<array/>
+					<key>footer-title</key>
+					<string>Select which applications to load Parallel into.</string>
+				</dict>
+				<dict>
+					<key>title</key>
+					<string>User Applications</string>
+					<key>predicate</key>
+					<string>isSystemApplication = FALSE AND (displayIdentifier IN {&apos;com.facebook.Facebook&apos;}) </string>
+					<key>icon-size</key>
+					<string>29</string>
+					<key>suppress-hidden-apps</key>
+					<string>1</string>
+					<key>cell-class-name</key>
+					<string>ALSwitchCell</string>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>label</key>
+			<string>Developer:</string>
+			<key>isStaticText</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>action</key>
+			<string>followOnTwitter:</string>
+			<key>icon</key>
+			<string>twitter.png</string>
+			<key>cell</key>
+			<string>PSButtonCell</string>
+			<key>label</key>
+			<string>@TwizzyIndy</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSButtonCell</string>
+			<key>label</key>
+			<string>Feedback Report</string>
+			<key>action</key>
+			<string>feedbackReport:</string>
+			<key>icon</key>
+			<string>mail.png</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>label</key>
+			<string>Thanks To:</string>
+			<key>isStaticText</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSButtonCell</string>
+			<key>label</key>
+			<string>Dr. Kyaw Saw Naing (fepfzau)</string>
+			<key>action</key>
+			<string>actionKyawZawNaing:</string>
+			<key>icon</key>
+			<string>site.png</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSButtonCell</string>
+			<key>label</key>
+			<string>Icon: Ye Lin Aung(KSE)</string>
+			<key>action</key>
+			<string>actionYeLinAung:</string>
+			<key>icon</key>
+			<string>fb.png</string>
+		</dict>
+		<dict>
+			<key>footerText</key>
+			<string>Parallel for iOS © 2015</string>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>isStaticText</key>
+			<true/>
+			<key>label</key>
+			<string></string>
+		</dict>
+	</array>
+	<key>title</key>
+	<string>Parallel</string>
+</dict>
+</plist>

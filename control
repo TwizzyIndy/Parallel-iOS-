@@ -1,0 +1,9 @@
+Package: com.twizzyindy.parallel
+Name: Parallel(Zawgyi-Unicode Bridge)
+Depends: firmware (>= 5.0), mobilesubstrate, applist (>= 1.4.1), preferenceloader
+Version: 1.0.0
+Architecture: iphoneos-arm
+Description: This tweak allow you to display both of Zawgyi and Unicode in one place.
+Maintainer: TwizzyIndy
+Author: TwizzyIndy
+Section: Tweaks
